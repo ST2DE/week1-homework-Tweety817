@@ -1,0 +1,74 @@
+body{
+    font-family: Microsoft JhengHei ;
+}
+.jumbotron{
+    background-color: gold;
+}
+.box {
+      height: 100%;
+      border: 1px solid white;
+    }
+    .box1{
+        background-image: url(https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        background-position: center center;
+        background-size: cover;
+    }
+    .box2{
+        background-image: url(https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        background-position: center center;
+        background-size: cover;
+    }
+    .box3{
+        background-image: url(https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&h=350);
+        background-position: center center;
+        background-size: cover;
+    }
+    .box4{
+        background-image: url(https://images.pexels.com/photos/279360/pexels-photo-279360.jpeg?auto=compress&cs=tinysrgb&h=350);
+        background-position: center center;
+        background-size: cover;
+    }
+    .timeline-section {
+      position: relative;
+    }
+    .timeline-section:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      transform: translateX(-50%);
+      background-color: #ccc;
+    }
+    .timeline-pointer {
+      position: relative;
+    }
+    .timeline-pointer::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 3px solid #ccc;
+      transform: translateX(-50%);
+      background-color: #fff;
+      z-index: 1;
+    }
+    @media (max-width: 576px) { 
+      .timeline-section:after, 
+      .timeline-pointer::after {
+        display: none;
+      }
+    }
+
+p,li{
+    font-size: 20px;
+}
+h3{
+    font-size:28px;
+    font-weight: bolder;
+}

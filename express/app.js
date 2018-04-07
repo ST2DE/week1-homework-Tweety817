@@ -43,6 +43,9 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
+// app.get("/about_me",function(req,res) {
+//   res.render("about_me");
+// })
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');

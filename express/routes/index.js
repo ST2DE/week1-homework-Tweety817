@@ -10,8 +10,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/about_me', function (req, res,next) {
   var name = req.query.name; 
-  var tel = req.query.tel; 
-  res.render('about_me', { name:name,tel:tel});
+  var hobby = req.query.hobby; 
+  res.render('about_me', { name:name,hobby:hobby});
 });
 
 

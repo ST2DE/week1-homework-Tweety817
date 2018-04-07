@@ -1,6 +1,66 @@
-extends layout
+//- extends layout
 
-block content
-  h1= name
-  p Welcome to #{name}
-  h2 your phone is #{tel}
+//- block content
+//-   h1= name
+//-   p Hi,#{name}.
+//-   p your hobby is #{hobby}.
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    link(rel='stylesheet', href='stylesheets/Tweety.css')
+    title I am Tweety
+  body
+    .container
+      .jumbotron
+        h1.display-3 嗨，我是Tweety！( ･ω･)ﾉ
+        p.lead 你可以在這認識我，嗯～～～～但我要怎麼認識你呢？
+        hr.my-2
+        p 總之有緣呢～我的信箱tweety30119@gmail.com，信箱聯繫囉！
+      .timeline-section.mt-5
+        .row.my-3.timeline-pointer
+          .col-sm-6
+            h3 背景
+            p
+              | 國立台北大學財政系，目前大四，在兩家公司擔任行銷相關實習生，先前也做過很多工作，大學生涯沒什麼玩樂，比較多勞碌（哈哈）。
+              br
+              | 討厭原本財政系的老路，於是決定學程式！至於學的原因～又是另一段故事囉。
+          .col-sm-6
+            .box.box1
+        .row.timeline-pointer.my-3.flex-sm-row-reverse
+          .col-sm-6
+            h3 為何學程式
+            ul
+              li 行銷跨域性比較低，但打程式，在哪都是一樣的，並不會因為地區而打法有所改變。
+              li 市場需求大於供給。所以待遇跟前景也比較有發展。財政系老路就不好說了...。
+              li 學程式很帥，就真的帥。還有機會遠端作業！超棒！
+          .col-sm-6
+            .box.box2
+        .row.timeline-pointer.my-3
+          .col-sm-6
+            h3 興趣
+            p
+              | 大多喜歡宅在家，不喜歡逛街、買網拍。我是個大叔系少女，喜歡在家打遊戲、運動、看影集。外面的世界太危險了。
+              br
+              | 運動喜歡徒手訓練、重訓、武術（可以防身餒），遊戲喜歡打槍戰！影集都看動腦的犯罪破案類型。（呼應上面說的外面好危險）
+              br
+              | 另外，我是個吃貨，非常挑食、不挑嘴，容易餓。喜歡日式料理，握壽司之類的。
+          .col-sm-6
+            .box.box3
+        .row.timeline-pointer.my-3.flex-sm-row-reverse
+          .col-sm-6
+            h3 未來目標
+            p
+              | 往前端的路先走囉！現在想學求職技能，當然是爭取有個工作先！然後當個貓奴。
+              br
+              | 有時候打程式也會覺得煩（有誰不會嗎），但也不會因為這樣就覺得程式討厭。打出來就很有成就感阿！
+          .col-sm-6
+            .box.box4
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+
